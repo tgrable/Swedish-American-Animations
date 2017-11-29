@@ -18,7 +18,7 @@ class MainBanner extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    // Add '#cache' => ['max-age' => 0], in for testing
+    // Add '#cache' => ['max-age' => 0] for testing and on first commit because the module has an extra layer of caching that flushing the cache won't get
     return [
       '#theme' => 'main_banner',
       '#nodes' => null,
